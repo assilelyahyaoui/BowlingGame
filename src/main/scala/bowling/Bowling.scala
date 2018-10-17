@@ -24,7 +24,6 @@ object Bowling extends App{
     else {
 
       println("The scores are " + game.scores)
-      println(game)
       println("Round number " + (game.round))
 
       gameLoop( Game.returnNewGameAfterRound(game, Game.getNewFrame(game.round)) , numRounds - 1 )

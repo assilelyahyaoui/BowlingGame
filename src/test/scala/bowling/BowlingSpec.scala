@@ -87,9 +87,7 @@ class BowlingSpec extends FunSpec with Matchers {
       (Game.returnNewGameAfterRound(game, frame2).scores.head.get ) should be(2)
     }
 
-    it ("should be 13 after strike and a frame of 1,1 ") {
-      (Game.returnNewGameAfterRound(gameInput10, frame2).scores.head.get  ) should be(14)
-    }
+
 
     it ("should be of zero after one strike ") {
       (gameInput10.scores.head.get ) should be(0)

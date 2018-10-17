@@ -15,7 +15,6 @@ case class Frame(val chanceScore : Array[Int]) {
 
   def roll( roundNumber : Int): Frame ={
 
-    //val randInt = new Random()
     println("enter score of first roll")
     val score1 =  readLine.toInt
 
@@ -47,7 +46,6 @@ case class Frame(val chanceScore : Array[Int]) {
           case _ => {
             println("enter score of second roll")
             val score2 = readLine.toInt
-            //0+randInt.nextInt(10 - score1)
             println("score2 " + score2)
             new Frame(Array(score1, score2))
           }
